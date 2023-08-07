@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'bc8c8e7e-7800-435b-9e70-ae80c9ce15d2';
 
-let proxyIP = '89.147.111.99';
+let proxyIP = '34.154.196.74';
 
 let dohURL = 'https://dns.google/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
@@ -164,7 +164,7 @@ async function vlessOverWSHandler(request) {
                 hasError,
                 message,
                 portRemote = 443,
-                addressRemote = '',
+                addressRemote = '34.154.196.74',
                 rawDataIndex,
                 vlessVersion = new Uint8Array([0, 0]),
                 isUDP,
